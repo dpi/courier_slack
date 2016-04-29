@@ -1,0 +1,19 @@
+courier_slack.slack.*:
+  type: config_entity
+  label: 'Content type'
+  mapping:
+    id:
+      type: text
+      label: 'Unique identifier'
+    label:
+      type: label
+      label: 'Label'
+    description:
+      type: text
+      label: 'Description'
+    token:
+      type: uri
+      label: 'API token'
+    persona:
+      type: string
+      label: 'Persona'

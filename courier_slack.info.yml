@@ -1,0 +1,6 @@
+name: Courier Slack
+type: module
+description: 'Integration with Slack and Mattermost with Courier.'
+core: 8.x
+dependencies:
+  - courier

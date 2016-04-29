@@ -1,0 +1,56 @@
+entity.courier_slack_message.canonical:
+  path: '/courier_slack/{courier_slack_message}/edit'
+  defaults:
+    _entity_form: 'courier_slack_message.edit'
+    _title: 'Edit Slack message'
+  requirements:
+    _entity_access: 'courier_slack_message.update'
+
+entity.courier_slack_message.edit_form:
+  path: '/courier_slack/{courier_slack_message}/edit'
+  defaults:
+    _entity_form: 'courier_slack_message.edit'
+    _title: 'Edit Slack message'
+  requirements:
+    _entity_access: 'courier_slack_message.update'
+
+courier_slack.settings:
+  path: '/admin/config/communication/slack'
+  defaults:
+    _form: '\Drupal\courier_slack\Form\SlackSettingsForm'
+    _title: 'Slack settings'
+  requirements:
+    _permission: 'administer courier'
+
+entity.courier_slack_endpoint.add:
+  path: '/admin/structure/courier_slack/endpoint/add'
+  defaults:
+    _entity_form: 'courier_slack_endpoint.add'
+    _title: 'Add endpoint'
+  requirements:
+    _permission: 'administer courier'
+
+entity.courier_slack_endpoint.edit_form:
+  path: '/admin/structure/courier_slack/endpoint/{courier_slack_endpoint}'
+  defaults:
+    _entity_form: 'courier_slack_endpoint.edit'
+    _title: 'Edit endpoint'
+  requirements:
+    _permission: 'administer courier'
+
+entity.courier_slack_endpoint.delete_form:
+  path: '/admin/structure/courier_slack/endpoint/{courier_slack_endpoint}/delete'
+  defaults:
+    _entity_form: 'courier_slack_endpoint.delete'
+    _title: 'Delete endpoint'
+  requirements:
+    _permission: 'administer courier'
+
+courier_slack.courier_slack_endpoint.overview:
+  path: '/admin/structure/courier_slack/endpoint'
+  defaults:
+    _controller: '\Drupal\Core\Entity\Controller\EntityListController::listing'
+    entity_type: 'courier_slack_endpoint'
+    _title: 'Slack endpoints'
+  requirements:
+    _permission: 'administer courier'

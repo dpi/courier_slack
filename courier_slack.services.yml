@@ -1,0 +1,4 @@
+services:
+  courier_slack.manager:
+    class: Drupal\courier_slack\SlackManager
+    arguments: []

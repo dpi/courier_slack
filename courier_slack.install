@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_requirements().
+ */
+function courier_slack_requirements($phase) {
+  $requirements = [];
+
+  if (!class_exists('\CL\Slack\Transport\ApiClient')) {
+    $requirements['courier_slack_dependencies'] = [
+      'description' => t('courier_slack has unmet Composer dependencies. Read the <a href="@url">documentation</a> on how to install them.', [
+        '@url' => 'https://www.drupal.org/node/2627292',
+      ]),
+      'severity' => REQUIREMENT_ERROR,
+    ];
+  }
+
+  return $requirements;
+}

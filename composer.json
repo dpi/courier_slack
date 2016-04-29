@@ -1,0 +1,19 @@
+{
+  "name": "drupal/courier_slack",
+  "description": "Integration with Slack and Mattermost with Courier.",
+  "type": "drupal-module",
+  "homepage": "http://drupal.org/project/courier_slack",
+  "authors": [
+    {
+      "name": "Daniel Phin",
+      "email": "pro@danielph.in",
+      "homepage": "http://danielph.in",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "cleentfaar/slack": "~0.17"
+  }
+}

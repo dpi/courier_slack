@@ -1,0 +1,5 @@
+courier_slack.courier_slack_endpoint.add:
+  route_name: entity.courier_slack_endpoint.add
+  title: 'Add Slack endpoint'
+  appears_on:
+    - courier_slack.courier_slack_endpoint.overview
