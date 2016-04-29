@@ -5,9 +5,11 @@ namespace Drupal\courier_slack\Form\Entity;
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Entity\Query\QueryFactory;
+use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class SlackEndpointForm extends EntityForm {
+
   /**
    * @var \Drupal\Core\Entity\Query\QueryFactory
    */
@@ -113,6 +115,8 @@ class SlackEndpointForm extends EntityForm {
     drupal_set_message($message);
     $this->logger('courier_slack')
       ->notice($message);
+
+    $form_state->setRedirectUrl(Url::fromRoute('courier_slack.courier_slack_endpoint.overview'));
   }
 
 }

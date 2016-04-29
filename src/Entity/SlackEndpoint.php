@@ -20,6 +20,7 @@ use Drupal\Core\Entity\EntityStorageInterface;
  *     "form" = {
  *       "add" = "Drupal\courier_slack\Form\Entity\SlackEndpointForm",
  *       "edit" = "Drupal\courier_slack\Form\Entity\SlackEndpointForm",
+ *       "delete" = "Drupal\courier_slack\Form\Entity\SlackEndpointDeleteForm",
  *     },
  *   },
  *   links = {
