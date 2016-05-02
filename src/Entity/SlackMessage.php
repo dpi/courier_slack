@@ -14,10 +14,10 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   label = @Translation("Slack message"),
  *   handlers = {
  *     "form" = {
- *       "default" = "Drupal\courier_chatroom\Form\Entity\SlackMessageForm",
- *       "add" = "Drupal\courier_chatroom\Form\Entity\SlackMessageForm",
- *       "edit" = "Drupal\courier_chatroom\Form\Entity\SlackMessageForm",
- *       "delete" = "Drupal\courier_chatroom\Form\Entity\SlackMessageForm",
+ *       "default" = "Drupal\courier_slack\Form\Entity\SlackMessageForm",
+ *       "add" = "Drupal\courier_slack\Form\Entity\SlackMessageForm",
+ *       "edit" = "Drupal\courier_slack\Form\Entity\SlackMessageForm",
+ *       "delete" = "Drupal\courier_slack\Form\Entity\SlackMessageForm",
  *     },
  *   },
  *   base_table = "courier_slack_message",

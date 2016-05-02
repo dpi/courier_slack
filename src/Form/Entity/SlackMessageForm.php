@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\courier_slack\Entity\Form;
+namespace Drupal\courier_slack\Form\Entity;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -11,7 +11,7 @@ use Drupal\courier_slack\Entity\SlackMessageInterface;
 /**
  * Form controller for Slack message.
  */
-class SlackMessage extends ContentEntityForm {
+class SlackMessageForm extends ContentEntityForm {
 
   use CourierTokenElementTrait;
 
