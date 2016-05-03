@@ -2,9 +2,12 @@
 
 namespace Drupal\courier_slack\Entity;
 
-use Drupal\courier\ChannelInterface;
+use Drupal\Core\Entity\ContentEntityInterface;
 
-interface SlackMessageInterface extends ChannelInterface {
+/**
+ * Defines an interface for the Slack message entity.
+ */
+interface SlackMessageInterface extends ContentEntityInterface {
 
   public function getEndpoint();
   public function setEndpoint(SlackEndpointInterface $endpoint);
