@@ -132,6 +132,22 @@ class SlackMessage extends ChannelBase implements SlackMessageInterface {
   /**
    * {@inheritdoc}
    */
+  public function importTemplate($content) {
+    $this->setMessage($content['message']);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function exportTemplate() {
+    return [
+      'message' => $this->getMessage(),
+    ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 

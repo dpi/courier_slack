@@ -17,3 +17,9 @@ courier_slack.slack.*:
     persona:
       type: string
       label: 'Persona'
+
+courier.template.courier_slack:
+  type: mapping
+  mapping:
+    message:
+      type: string
